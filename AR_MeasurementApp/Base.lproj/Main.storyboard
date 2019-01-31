@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AR_MeasurementApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3CA-Gk-Yok">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </arscnView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="center" translatesAutoresizingMaskIntoConstraints="NO" id="5gO-AO-jx4">
+                                <rect key="frame" x="167.5" y="313.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="CZf-FQ-Myd"/>
+                                    <constraint firstAttribute="height" constant="40" id="Lw4-OA-s33"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vy1-Hx-biE">
+                                <rect key="frame" x="15" y="32" width="0.0" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="CGN-ha-hNF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.056107677723830074" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3CA-Gk-Yok" secondAttribute="bottom" id="H7M-Hh-4hR"/>
+                            <constraint firstItem="3CA-Gk-Yok" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WAz-Ke-x2L"/>
+                            <constraint firstItem="vy1-Hx-biE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="ahS-Jp-Dl3"/>
+                            <constraint firstItem="3CA-Gk-Yok" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kZ8-8C-rux"/>
+                            <constraint firstItem="5gO-AO-jx4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nLp-PN-T0F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3CA-Gk-Yok" secondAttribute="trailing" id="r8Q-EK-S6P"/>
+                            <constraint firstItem="5gO-AO-jx4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uOw-nJ-vnT"/>
+                            <constraint firstItem="vy1-Hx-biE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="xgm-yw-zTT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lbl_Distance" destination="vy1-Hx-biE" id="WPL-qm-QvJ"/>
+                        <outlet property="scnView" destination="3CA-Gk-Yok" id="ehX-aZ-woE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="center" width="80" height="80"/>
+    </resources>
+</document>
